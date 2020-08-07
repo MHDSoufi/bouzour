@@ -1,6 +1,13 @@
 <style type="text/css">
   nav{
+    
     background-color: {{$Background}};
+
+  }
+  .navbar{
+
+    transition: all 0.5s ease;
+    font-weight: bold;
   }
  
   .navbar-light .navbar-nav .nav-link{
@@ -14,12 +21,17 @@
 .mr-auto{
   margin-left: auto!important;
   margin-right: 10px!important;
-}  
+} 
+
+.scrolling{
+  background-color: #fff;
+
+} 
 
 
 </style>
 <nav class="navbar {{ $fixed ? 'fixed-top' : ''}} navbar-expand-lg navbar-light">
-  <a class="navbar-brand" href="{{route('Acceuil') }}">Eurl Bouzour</a>
+  <a class="navbar-brand" href="{{route('Acceuil') }}"><img src="/storage/icons/logo.png" width="120" height="54"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -37,7 +49,7 @@
           Nos Projets
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Projets en cours</a>
+          <a class="dropdown-item" href="{{ route('promoCour') }}">Projets en cours</a>
           <a class="dropdown-item" href="#">Projets livrés</a>
         </div>
       </li>
@@ -57,4 +69,24 @@
     </form>
   </div>
 </nav>
+
+@section('js')
+@parent
+<script type="text/javascript">
+  var scroll = $(window).scrollTop();
+  if (scroll > 0) {
+     $("nav").addClass("scrolling");
+  }
+  $(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll > 0) {
+        $("nav").addClass("scrolling");
+    } else {
+        $("nav").removeClass("scrolling");
+    }
+});
+</script>
+
+@stop
 

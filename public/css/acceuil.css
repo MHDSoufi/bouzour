@@ -1,0 +1,158 @@
+.glider-contain{
+	max-width: 90%;
+}
+
+.card{
+	max-width: 300px;
+	max-height: 430px;
+	margin-right: 15px;
+}
+.card .card-img-top{min-height: 250px;}
+.glider-prev{
+	margin-left: -10px;
+	margin-top: 105px;
+}
+
+.glider-next{
+	margin-right: -10px;
+	margin-top: 105px;
+}
+
+.titre_en_cours{
+	max-width: 300px;
+	margin: 10px auto;
+	border-bottom: 3px solid #f7941e;
+}
+.card h5{
+	font-weight: bold;
+}
+.link_cours{
+	max-width: 200px;
+	position: relative;
+	color: #f7941e;
+	height: 80px;
+	font-size: 20px;
+	padding: 10px;
+	left: 25%;
+	margin-top: 20px;
+	vertical-align: 80px;
+	border: 2px solid #f7941e;
+	transition: all 0.5s ease;
+}
+
+.link_cours:hover{	
+	text-decoration: none;
+	background-color: #f7941e;
+	color: #fff;
+}
+
+/* section presentation*/
+#presentation{
+	margin-top: 20px;
+}
+
+.presente h1{
+	font-size: 25px;
+	max-width: 200px;
+	margin: 0 auto;
+	padding-left: 15px;
+	padding-bottom: 0px;
+	font-weight: bold;
+	color: #f7941e;
+	border-bottom: 4px solid #f7941e;
+}
+.presente h3{
+	font-size: 20px;
+	font-weight: bold;
+	margin-left: 20px;
+}
+.txtPara{ 
+	font-size: 18px;
+	padding: 10px;
+	margin-left: 40px;
+}
+
+.parallaxPresente{
+		 /* The image used */
+  background-image: url("/storage/icons/prensenteFond.png"); 
+  min-height: 150px;
+  position: relative;
+  opacity: 0.65;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+
+.counter-count
+{
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    margin-right: -20px;
+    color: #f7941e;
+    text-align: center;
+    line-height: 92px;
+    width: 92px;
+    height: 92px;
+    margin-left: 80px;
+    display: inline-block;
+}
+.border-title{
+	width: 10%;
+	height: 5px;
+	font-size: 10px !important;
+	margin: 0 auto;
+	background-color:#f7941e;
+	margin-top: -30px;
+}
+#logement{
+	font-size: 40px;
+	color: #f7941e;
+	font-weight: bold;
+	margin-left: 30px;
+}
+.expTxt{
+	margin-left: 70px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.logTxt{
+	margin-left: 80px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+.empTxt{
+	margin-left: 90px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+.livre{
+	margin-left: 90px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+
+@media only screen and (max-device-width: 736px) {
+.counter-count
+{
+	font-size: 40px;
+}
+.counter-count .fa{
+	font-size: 20px;
+}
+#logement{
+	margin-left: 15px;
+}
+
+}
+
+
