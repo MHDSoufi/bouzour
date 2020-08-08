@@ -15,4 +15,8 @@ class ClientController extends Controller
    public function propos(){
    	return view('client.propos');
    }
+
+   public function promoCours(){
+   	return view('client.promoCours');
+   }
 }

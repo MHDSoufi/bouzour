@@ -147,14 +147,14 @@
 </section>
 
 <section id="presentation">
-  <div class="presente">
+  <div class="presente" >
     <h1>EURL BOUZOUR</h1>
     <h3>Qui somme nous?</h3>
     <p class="txtPara"><strong>PROMOTION IMMOBILIERE EURL BOUZOUR</strong> Créer en 1995 avec plus de 20 ans expérience dans le domaine de la construction, conçoit et réalise des projets et des ensemble immobiliers haut standing qualité et moderne pour une clientèle exigeante.
     Nous pouvons dire que La construction est un domaine qui nous connait bien ! 
     Nos promotions sont implantés dans de nombreuses wilayas</p>
     <div class="parallaxPresente">
-      <div class="row">
+      <div class="row" style="max-width: 1364px;">
         <div class="col-md-3 col-sm-6">
           <h4>
             <p class="counter-count">20</p>
