@@ -49,7 +49,7 @@
           Nos Projets
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="{{ route('promoCour') }}">Projets en cours</a>
+          <a class="dropdown-item" href="{{ route('promoCour', 'cartePromo') }}">Projets en cours</a>
           <a class="dropdown-item" href="#">Projets livrés</a>
         </div>
       </li>

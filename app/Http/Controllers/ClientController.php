@@ -16,7 +16,7 @@ class ClientController extends Controller
    	return view('client.propos');
    }
 
-   public function promoCours(){
-   	return view('client.promoCours');
+   public function promoCours($vue){
+   	return view('client.promoCours' , ['vue' => $vue]);
    }
 }

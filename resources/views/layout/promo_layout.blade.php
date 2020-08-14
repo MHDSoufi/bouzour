@@ -11,6 +11,7 @@
 			.container-fluid{
 				margin:0;
 				padding: 0;
+        padding-right: 20px;
 			}
 			#map .nav-item{
 				font-size: 30px;
@@ -45,14 +46,7 @@
                 color: #fff;
                 font-weight:bold;
             }
-            #carte, #liste{
-                display: none;
-            }
-            #listepromo{
-                height: 470px;
-                overflow-x: auto;
-            }
-
+           
 		</style>
 	@show
 </head>
@@ -64,18 +58,24 @@
     <div class="mx-auto order-0">
     	
     	<ul class="navbar-nav ml-auto" id="map">
-            <li class="nav-item active">
+        <a href="{{route('promoCour', 'cartePromo')}}">
+          <li class="nav-item active">
                 <i class="fa fa-map-marker" aria-hidden="true" style="position:absolute;margin-top: 6px;margin-left: 10px; float: left;"></i> <i class="fa fa-building" aria-hidden="true" style="float: right;margin-top: 6px;"></i>
                 <p>Carte/Liste</p>
-            </li>
-            <li class="nav-item">
+          </li>
+        </a>
+        <a href="{{route('promoCour', 'carte')}}">
+          <li class="nav-item">
                 <i class="fa fa-map-marker" aria-hidden="true" style="position:absolute;margin-top: 6px"></i>
                 <p style="position: absolute;margin-top: 35px">Carte</p>
-            </li>
-             <li class="nav-item">
+          </li>
+        </a> 
+        <a href="{{route('promoCour' ,'promo')}}">
+          <li class="nav-item">
                <i class="fa fa-building" aria-hidden="true" style="position:absolute;margin-top: 6px;margin-left: 30px;"></i>
                 <p style="position: absolute;margin-top: 35px; margin-left: 30px;">Liste</p>
-            </li>
+          </li>
+        </a>    
         </ul>
     </div>
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
@@ -131,25 +131,8 @@
               </div>
         </form>
 </div>
-<div class="row" id="carteListe" style="max-width: 1364px;">
-    <div class="col-md-6">
-        @yield('map')
-    </div>
-     <div class="col-md-6" id="listepromo">
-        @yield('liste')
-    </div>
-</div>
-
-<div class="row" id="carte">
-    <div class="container-fluid">
-        @yield('map')
-    </div>
-</div>
-
-<div class="row" id="liste">
-    <div class="container-fluid">
-        @yield('liste')
-    </div>
+<div class="container-fluid">
+  @yield('content')
 </div>
 
 @section('js')
