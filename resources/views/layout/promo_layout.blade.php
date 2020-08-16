@@ -23,8 +23,12 @@
                 font-weight: bold;
             }
 			.active{
-				color: #f7941e;
+				color: #f7941e!important;
 			}
+      .nav-item{
+        color: #000;
+        transition: all 0.5s ease;
+      }
             #retour{
                 color: #f7941e;
                 padding: 10px;
@@ -58,22 +62,22 @@
     <div class="mx-auto order-0">
     	
     	<ul class="navbar-nav ml-auto" id="map">
-        <a href="{{route('promoCour', 'cartePromo')}}">
-          <li class="nav-item active">
+        <a href="{{route('promoCour', 'cartePromo')}}" class="link-Menu">
+          <li class="nav-item {{($vue === 'cartePromo') ? 'active' : ''}}">
                 <i class="fa fa-map-marker" aria-hidden="true" style="position:absolute;margin-top: 6px;margin-left: 10px; float: left;"></i> <i class="fa fa-building" aria-hidden="true" style="float: right;margin-top: 6px;"></i>
                 <p>Carte/Liste</p>
           </li>
         </a>
         <a href="{{route('promoCour', 'carte')}}">
-          <li class="nav-item">
-                <i class="fa fa-map-marker" aria-hidden="true" style="position:absolute;margin-top: 6px"></i>
-                <p style="position: absolute;margin-top: 35px">Carte</p>
+          <li class="nav-item {{($vue === 'carte') ? 'active' : ''}}">
+                <i class="fa fa-map-marker" aria-hidden="true" style="position:absolute;margin-top: -12px;"></i>
+                <p style="position: absolute;margin-top: 20px;">Carte</p>
           </li>
         </a> 
-        <a href="{{route('promoCour' ,'promo')}}">
-          <li class="nav-item">
-               <i class="fa fa-building" aria-hidden="true" style="position:absolute;margin-top: 6px;margin-left: 30px;"></i>
-                <p style="position: absolute;margin-top: 35px; margin-left: 30px;">Liste</p>
+        <a href="{{route('promoCour' ,'promo')}}" class="link-Menu">
+          <li class="nav-item {{($vue === 'promo') ? 'active' : ''}}">
+               <i class="fa fa-building" aria-hidden="true" style="position:absolute;margin-top: -12px;margin-left: 30px;"></i>
+                <p style="position: absolute;margin-top: 20px; margin-left: 30px;">Liste</p>
           </li>
         </a>    
         </ul>
@@ -91,8 +95,8 @@
               <div class="form-row">
                 <div class="col-md-4">
                   <div class="form-group">
-                    <label for="lieu">Où voulez-vous habiter ?</label>
-                        <select class="form-control" id="lie">
+                    <label for="lieu" >Où voulez-vous habiter ?</label>
+                        <select class="form-control" id="lieu">
                           <option>Tous</option>
                           <option>Oran</option>
                           <option>Chlef</option>
