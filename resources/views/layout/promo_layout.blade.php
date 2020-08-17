@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Liste des promotions @yield('title')</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 	@section('css')
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -50,6 +51,13 @@
                 color: #fff;
                 font-weight:bold;
             }
+            #carte_btn .fa-map-marker{
+                position:absolute;margin-top: -12px;
+            }
+            #carte_btn p{
+              position: absolute;margin-top: 20px;
+            }
+         
            
 		</style>
 	@show
@@ -62,19 +70,19 @@
     <div class="mx-auto order-0">
     	
     	<ul class="navbar-nav ml-auto" id="map">
-        <a href="{{route('promoCour', 'cartePromo')}}" class="link-Menu">
+        <a href="{{route('promoCour', 'cartePromo')}}" class="link-Menu" id="cartePromo_btn">
           <li class="nav-item {{($vue === 'cartePromo') ? 'active' : ''}}">
                 <i class="fa fa-map-marker" aria-hidden="true" style="position:absolute;margin-top: 6px;margin-left: 10px; float: left;"></i> <i class="fa fa-building" aria-hidden="true" style="float: right;margin-top: 6px;"></i>
                 <p>Carte/Liste</p>
           </li>
         </a>
-        <a href="{{route('promoCour', 'carte')}}">
+        <a href="{{route('promoCour', 'carte')}}" id="carte_btn">
           <li class="nav-item {{($vue === 'carte') ? 'active' : ''}}">
-                <i class="fa fa-map-marker" aria-hidden="true" style="position:absolute;margin-top: -12px;"></i>
-                <p style="position: absolute;margin-top: 20px;">Carte</p>
+                <i class="fa fa-map-marker" aria-hidden="true" ></i>
+                <p>Carte</p>
           </li>
         </a> 
-        <a href="{{route('promoCour' ,'promo')}}" class="link-Menu">
+        <a href="{{route('promoCour' ,'promo')}}" id="promo_btn">
           <li class="nav-item {{($vue === 'promo') ? 'active' : ''}}">
                <i class="fa fa-building" aria-hidden="true" style="position:absolute;margin-top: -12px;margin-left: 30px;"></i>
                 <p style="position: absolute;margin-top: 20px; margin-left: 30px;">Liste</p>

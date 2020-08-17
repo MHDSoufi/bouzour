@@ -52,15 +52,104 @@
 }
 #mymap { height: 470px; margin-left: 20px;} 
 .img-pop{width: 200px;height: 180px;}
+#promo{padding: 20px;max-width: 1364px; margin-left: 100px;}
+#promo .card{
+  margin-right: 10px;
+}
+.link_cours{
+  max-width: 200px;
+  position: relative;
+  color: #f7941e;
+  height: 80px;
+  font-size: 20px;
+  padding: 10px;
+  left: 25%;
+  margin-top: 20px;
+  vertical-align: 80px;
+  border: 2px solid #f7941e;
+  transition: all 0.5s ease;
+}
+
+.link_cours:hover{  
+  text-decoration: none;
+  background-color: #f7941e;
+  color: #fff;
+}
+ @media only screen and (max-width: 800px) {
+     #cartePromo_btn{display: none;}
+     #carte_btn .fa-map-marker{margin-left: -20px!important;}
+     #carte_btn p{margin-left: -20px;}
+}
+
 </style>
 @stop
 @section('content')
   @switch($vue)
       @case("carte")
-        <div id="mymap"></div>
+        <div id="mymap" style=""></div>
       @break
       @case("promo")
-        <div id="promo"></div>
+        <div id="promo">
+          <div class="row">
+            
+              <div class="card" style="width: 18rem;" id="promo_card_chlef">
+                  <img class="card-img-top" src="{{url('images/slider/promo1.jpg')}}" alt="Card image cap">
+                  <div class="card-body">
+                    <h5>Residence HEY BENSOUNA</h5>
+                    <p class="card-text">Si vous souhaitez acquérir un appartement à Chlef dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
+                    <a href="" class="link_cours">Voir Détail</a>
+                  </div>
+              </div>
+          <div class="card" style="width: 18rem;" id="promo_card_tel">
+              <img class="card-img-top" src="{{url('images/slider/promo2.png')}}" alt="Card image cap">
+              <div class="card-body">
+                <h5>PROJET 160 LOGTS LPA BOUDJLIDA TLEMCEN</h5>
+                <p class="card-text">Si vous souhaitez acquérir un appartement à Tlemcen dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
+                <a href="" class="link_cours">Voir Détail</a>
+              </div>
+          </div>
+          <div class="card" style="width: 18rem;" id="promo_card_oran">
+      <img class="card-img-top" src="{{url('images/slider/promo3.jpg')}}" alt="Card image cap">
+      <div class="card-body">
+        <h5>Promotion Immobiliere Oran - Canastel</h5>
+        <p class="card-text">Si vous souhaitez acquérir un appartement à Oran dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
+        <a href="" class="link_cours">Voir Détail</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;" id="promo_card_oran2">
+      <img class="card-img-top" src="{{url('images/slider/promo4.jpg')}}" alt="Card image cap">
+      <div class="card-body">
+        <h5>RESIDENCE  ELYASMINE BELGAID ORAN</h5>
+        <p class="card-text">Si vous souhaitez acquérir un appartement à Oran dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
+        <a href="" class="link_cours">Voir Détail</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;" id="promo_card_oran3">
+      <img class="card-img-top" src="{{url('images/slider/promo5.jpg')}}" alt="Card image cap">
+      <div class="card-body">
+        <h5>RESIDENCE  ZOHOUR PEPINIERE ORAN</h5>
+        <p class="card-text">Si vous souhaitez acquérir un appartement à Oran dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
+        <a href="" class="link_cours">Voir Détail</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;" id="promo_card_oran4">
+      <img class="card-img-top" src="{{url('images/slider/promo7.jpg')}}" alt="Card image cap">
+      <div class="card-body">
+        <h5>RESIDENCE ELSALEM BIR EL DJIR ORAN</h5>
+        <p class="card-text">Si vous souhaitez acquérir un appartement à Oran dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
+        <a href="" class="link_cours">Voir Détail</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;" id="promo_card_oran5">
+      <img class="card-img-top" src="{{url('images/slider/promo7.jpg')}}" alt="Card image cap">
+      <div class="card-body">
+        <h5>RESIDENCE ELSALEM BIR EL DJIR ORAN</h5>
+        <p class="card-text">Si vous souhaitez acquérir un appartement à Oran dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
+        <a href="" class="link_cours">Voir Détail</a>
+      </div>
+    </div>
+      </div>
+      </div>
       @break
       @default
         <div class="row" style="max-width: 1364px;">
@@ -172,6 +261,7 @@
    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
    crossorigin=""></script>
 <script type="text/javascript">
+if (document.getElementById("mymap")) {
 var mymap = L.map('mymap').setView([35.913887, 0.145941], 7);
 L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token=sk.eyJ1IjoiZXVybGJvdXpvdXIiLCJhIjoiY2tjaXd3czRjMWVpZzMzbzg2dWlwd2dncCJ9.VoUQwaU4a0M-WB2knFidSw', {
     attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -261,6 +351,39 @@ function viderLayer (table){
   for (var i = 0; i < table.length; i++) {
     mymap.removeLayer(table[i]);
   }
+}
+}else{
+  var oran = document.getElementById("promo_card_oran"),
+      oran2 = document.getElementById("promo_card_oran2"),
+      oran3 = document.getElementById("promo_card_oran3"),
+      oran4 = document.getElementById("promo_card_oran4"),
+      oran5 = document.getElementById("promo_card_oran5"),
+      tel = document.getElementById("promo_card_tel"),
+      chlef = document.getElementById("promo_card_chlef");
+
+  document.getElementById("lieu").addEventListener('change', (event) =>{  
+  oran.style.display = oran2.style.display = oran3.style.display = oran4.style.display = oran5.style.display = tel.style.display = chlef.style.display = "none" ;
+
+  switch (event.target.value){
+    case "Oran":
+       oran.style.display = oran2.style.display = oran3.style.display = oran4.style.display = oran5.style.display = "block";
+    break;
+    case "Chlef":
+        chlef.style.display = "block";
+    break;
+    case "Tlemcen":
+        tel.style.display = "block";
+    break;
+    case "Mostaganem":
+     oran.style.display = oran2.style.display = oran3.style.display = oran4.style.display = oran5.style.display = tel.style.display = chlef.style.display = "none" ;
+    break;
+    default:
+        oran.style.display = oran2.style.display = oran3.style.display = oran4.style.display = oran5.style.display = "block";
+        chlef.style.display = "block";
+        tel.style.display = "block";
+    break;
+  }
+});
 }
 </script>
 @stop
