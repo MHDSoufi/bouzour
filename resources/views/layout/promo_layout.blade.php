@@ -51,8 +51,16 @@
                 color: #fff;
                 font-weight:bold;
             }
+            
             #carte_btn .fa-map-marker{
                 position:absolute;margin-top: -12px;
+            }
+            #retour_btn {display: none;}
+            #promo_btn .fa-building{
+              position: absolute;margin-top: -12px;margin-left: 30px;
+            }
+            #promo_btn p{
+                position: absolute;margin-top: 20px; margin-left: 30px;
             }
             #carte_btn p{
               position: absolute;margin-top: 20px;
@@ -69,7 +77,8 @@
     </div>
     <div class="mx-auto order-0">
     	
-    	<ul class="navbar-nav ml-auto" id="map">
+    	<ul class="navbar-nav ml-auto" id="map">          
+        
         <a href="{{route('promoCour', 'cartePromo')}}" class="link-Menu" id="cartePromo_btn">
           <li class="nav-item {{($vue === 'cartePromo') ? 'active' : ''}}">
                 <i class="fa fa-map-marker" aria-hidden="true" style="position:absolute;margin-top: 6px;margin-left: 10px; float: left;"></i> <i class="fa fa-building" aria-hidden="true" style="float: right;margin-top: 6px;"></i>
@@ -84,10 +93,15 @@
         </a> 
         <a href="{{route('promoCour' ,'promo')}}" id="promo_btn">
           <li class="nav-item {{($vue === 'promo') ? 'active' : ''}}">
-               <i class="fa fa-building" aria-hidden="true" style="position:absolute;margin-top: -12px;margin-left: 30px;"></i>
-                <p style="position: absolute;margin-top: 20px; margin-left: 30px;">Liste</p>
+               <i class="fa fa-building" aria-hidden="true"></i>
+                <p>Liste</p>
           </li>
-        </a>    
+        </a>  
+        <a href="{{route('Acceuil')}}" id="retour_btn">
+          <li class="nav-item {{($vue === 'promo') ? 'active' : ''}}">
+               <i class="fa fa-home" aria-hidden="true"></i>
+          </li>
+        </a> 
         </ul>
     </div>
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">

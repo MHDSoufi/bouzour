@@ -72,13 +72,28 @@
 
 .link_cours:hover{  
   text-decoration: none;
-  background-color: #f7941e;
+  background-color: #f7941e; 
   color: #fff;
 }
  @media only screen and (max-width: 800px) {
+
      #cartePromo_btn{display: none;}
      #carte_btn .fa-map-marker{margin-left: -20px!important;}
      #carte_btn p{margin-left: -20px;}
+     #promo_btn .fa-building{
+        position: absolute;margin-top: -32px;margin-left: 30px;
+      }
+      #promo_btn p{
+         position: absolute;margin-top: -3px; margin-left: 30px;
+      }
+      #retour_btn  {display: block;}
+      #listepromo{display: none;}
+      #promo{margin-left: 20px;}
+      #promo .card{
+        margin-right: 10px;
+        margin-bottom: 20px;
+      }
+
 }
 
 </style>
@@ -251,9 +266,6 @@
       </div>
   @endswitch
  
-@stop
-@section('liste')
-
 @stop
 
 @section('js')
