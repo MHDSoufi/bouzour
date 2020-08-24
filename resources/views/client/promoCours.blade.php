@@ -87,12 +87,19 @@
          position: absolute;margin-top: -3px; margin-left: 30px;
       }
       #retour_btn  {display: block;}
+      #retour_btn .fa-home{position: absolute;margin-top: -60px;right: 2%;color: #f7941e;}
       #listepromo{display: none;}
       #promo{margin-left: 20px;}
       #promo .card{
         margin-right: 10px;
         margin-bottom: 20px;
       }
+      .btn-warning{
+                margin-top: 10px;
+            }
+      .hiden{height: 0px ; display: none;}
+      #btn_filter{display: block;}
+      .show{display: block;height: 300px;}
 
 }
 
@@ -230,7 +237,7 @@
                       <p class="card-text">Si vous souhaitez acquérir un appartement à Oran dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
                     </div>
                     
-                  </div>
+                  </div> 
                 </div>
                 </a>
                 <a class="cardPromo" href="promoDatail"><div class="card" style="margin-bottom: 10px;">
@@ -397,5 +404,13 @@ function viderLayer (table){
   }
 });
 }
+document.getElementById("btn_filter").addEventListener('click', function(){
+  var filter = document.getElementById("filter");
+  if(filter.offsetHeight === 0 ){
+    filter.classList.toggle("show");
+  }else{
+    filter.classList.remove("show");
+  }
+});
 </script>
 @stop

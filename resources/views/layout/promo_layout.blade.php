@@ -65,6 +65,8 @@
             #carte_btn p{
               position: absolute;margin-top: 20px;
             }
+            #btn_filter{display: none;}
+            .btn_filter{height: 50px; width: 200px; vertical-align: 50px; padding: 10px; color: #fff;background-color: #f7943e;margin: 0 auto;margin-top: -20px;margin-bottom: 10px;border:none;}
          
            
 		</style>
@@ -98,8 +100,8 @@
           </li>
         </a>  
         <a href="{{route('Acceuil')}}" id="retour_btn">
-          <li class="nav-item {{($vue === 'promo') ? 'active' : ''}}">
-               <i class="fa fa-home" aria-hidden="true"></i>
+          <li class="nav-item">
+               <i style="font-size: 30px;" class="fa fa-home" aria-hidden="true"></i>
           </li>
         </a> 
         </ul>
@@ -107,13 +109,14 @@
     <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-                <a class="nav-link" id="retour" href="#"><i class="fa fa-home" aria-hidden="true" style="font-size: 30px;"></i><span>Retour vers l'acceuil</span></a>
+                <a class="nav-link" id="retour" href="{{route('Acceuil')}}"><i class="fa fa-home" aria-hidden="true" style="font-size: 30px;"></i><span>Retour vers l'acceuil</span></a>
             </li>
         </ul>
     </div>
 </nav>
-<div class="container" style="margin: 0 auto;">
-        <form>
+<div class="container" style="margin: 0 auto;" >
+  <button id="btn_filter" class="btn_filter">Filtrer la recherche</button>
+        <form class="hiden" id="filter">
               <div class="form-row">
                 <div class="col-md-4">
                   <div class="form-group">

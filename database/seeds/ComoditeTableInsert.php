@@ -17,12 +17,33 @@ class ComoditeTableInsert extends Seeder
         ]);
 
         DB::table('comodites')->insert([
-            'intitulet' => 'Espaces verts et jeux pour enfants',
+            'intitulet' => 'Aire de stationnement extérieur',
             'intituletAR' => null,
         ]);
 
         DB::table('comodites')->insert([
+            'intitulet' => 'Espaces verts et jeux pour enfants',
+            'intituletAR' => null,
+        ]);
+
+
+        DB::table('comodites')->insert([
             'intitulet' => 'Parking de stationnement',
+            'intituletAR' => null,
+        ]);
+
+        DB::table('comodites')->insert([
+            'intitulet' => 'Vidéophone',
+            'intituletAR' => null,
+        ]);
+
+        DB::table('comodites')->insert([
+            'intitulet' => 'Interphone',
+            'intituletAR' => null,
+        ]);
+
+        DB::table('comodites')->insert([
+            'intitulet' => 'Ascenseurs',
             'intituletAR' => null,
         ]);
 
@@ -38,6 +59,30 @@ class ComoditeTableInsert extends Seeder
 
         DB::table('comodites')->insert([
             'intitulet' => 'Cuisine moderne',
+            'intituletAR' => null,
+        ]);
+
+        DB::table('comodites')->insert([
+            'intitulet' => 'Cuisine équipé',
+            'intituletAR' => null,
+        ]);
+
+        DB::table('comodites')->insert([
+            'intitulet' => 'Fenêtres en aluminium',
+            'intituletAR' => null,
+        ]);
+        DB::table('comodites')->insert([
+            'intitulet' => 'Portes de bonne qualités ',
+            'intituletAR' => null,
+        ]);
+
+        DB::table('comodites')->insert([
+            'intitulet' => 'Appartement équipé d’une chaudière',
+            'intituletAR' => null,
+        ]);
+
+        DB::table('comodites')->insert([
+            'intitulet' => 'Appartement avec installation TV (04 satellites)',
             'intituletAR' => null,
         ]);
     }

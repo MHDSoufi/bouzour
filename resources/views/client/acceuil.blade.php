@@ -30,7 +30,7 @@
     <div class="carousel-item active">
       <img class="d-block w-100" src="{{url('images/slider/promo1.jpg')}} ">
       <div class="carousel-caption d-none d-md-block">
-      <a class="btn btn-warning" href="/edit" role="button">Residence HEY BENSOUNA</a>
+      <a class="btn btn-warning" href="{{ route('edit', '1')}}" role="button">Residence HEY BENSOUNA</a>
   	  </div>   
 	
     </div>

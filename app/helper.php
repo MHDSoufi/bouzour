@@ -3,6 +3,7 @@ use Illuminate\Support\Facades\DB;
 use App\Model\Comodite;
 use App\Model\Wilaya;
 use App\Model\Promo;
+use App\Model\ImagesPromo;
 use Illuminate\Database\Eloquent\Builder;
 if (!function_exists('giveWilaya')) {
 	 function giveWilaya(){
@@ -29,9 +30,9 @@ if (!function_exists('getLienImage')) {
 	}
 }
 
-if (!function_exists('getLienImageAll')) {
+if (!function_exists('getLienImageAll')) { 
 	 function getLienImageAll($promo_id){
-		$images = Promo::find($promo_id)->imagePromo();
+		$images = ImagesPromo::all()->where('promo_id','=' ,$promo_id );
 		return $images;
 	}
 }

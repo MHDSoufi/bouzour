@@ -13,11 +13,11 @@ class ImagesFereignKeys extends Migration
      */
     public function up()
     {
-        Schema::table('images_promos', function(Blueprint $table) {
+       /* Schema::table('images_promos', function(Blueprint $table) {
             $table->foreign('promo_id')->references('id')->on('promos')
                         ->onDelete('cascade')
                         ->onUpdate('cascade');
-        });
+        });*/
     }
 
     /**
@@ -27,8 +27,8 @@ class ImagesFereignKeys extends Migration
      */
     public function down()
     {
-        Schema::table('images_promos', function(Blueprint $table) {
+       /* Schema::table('images_promos', function(Blueprint $table) {
             $table->dropForeign('images_promos_promo_id_foreign');
-        });
+        });*/
     }
 }

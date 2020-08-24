@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', 'ClientController@index')->name('Acceuil');
 Route::get('/propos', 'ClientController@propos')->name('Propos');
 Route::get('/promo/{vue}', 'ClientController@promoCours')->name('promoCour');
+Route::get('/edit/{id}', 'ClientController@edit')->name('edit');
 
 Route::get('/admin', function () {
     return view('admin');

@@ -13,11 +13,11 @@ class ComuneForeignKeys extends Migration
      */
     public function up()
     {
-        Schema::table('comunes', function(Blueprint $table) {
+       /* Schema::table('comunes', function(Blueprint $table) {
             $table->foreign('wilaya_id')->references('id')->on('wilayas')
                         ->onDelete('cascade')
                         ->onUpdate('cascade');
-        });
+        });*/
     }
 
     /**
@@ -27,8 +27,8 @@ class ComuneForeignKeys extends Migration
      */
     public function down()
     {
-        Schema::table('comunes', function(Blueprint $table) {
+        /*Schema::table('comunes', function(Blueprint $table) {
             $table->dropForeign('comunes_wilaya_id_foreign');
-        });
+        });*/
     }
 }
