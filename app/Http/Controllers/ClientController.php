@@ -25,4 +25,11 @@ class ClientController extends Controller
       $img = getLienImageAll($id);
       return view('client.editPromo' , ['promo' => $promo, "images" => $img]);
    }
+   public function faq(){
+      return view('client.faq');
+   }
+
+   public function contact(){
+      return view('client.contact');
+   }
 }

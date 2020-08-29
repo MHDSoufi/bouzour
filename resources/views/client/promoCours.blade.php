@@ -108,7 +108,7 @@
 @section('content')
   @switch($vue)
       @case("carte")
-        <div id="mymap" style=""></div>
+        <div id="mymap"></div>
       @break
       @case("promo")
         <div id="promo">

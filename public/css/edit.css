@@ -7,15 +7,58 @@
 	border-bottom: 3px #f7941e solid;
 }
 
-.w-100{
-	width: 500px!important;
-	height: 300px;
+#descript{
+	min-width: 400px;
+	padding: 20px;
+	padding-top: 40px;
 }
-
-.thumb{
-	width: 150px!important;
-	height: 80px;
+#descript .name-promo{
+	font-size: 30px;
+	color: #f7941e; 
+	font-weight: bold;
 }
-#glider-persp{
-	margin-top: 50px;
+#descript .adresse{
+	font-size: 20px; 
+	font-weight: bold;
+}
+#descript .livre{
+	font-size: 20px; 
+	color: #f7941e; 
+}
+#descript .button  .btn-primary{
+	background-color: #f7941e!important;
+	border-color: #f7941e;
+	transition: all 0.5s ease;
+}
+#descript .button  .btn-primary:hover{
+	background-color: #f7943e!important;
+}
+.discript{
+	font-size: 25px;
+	margin-top: 20px;
+	margin-left: 15px;
+}
+.avantage{
+	font-size: 18px;
+	padding: 20px;
+	font-weight: bold;
+}
+.col-md-3 .comod{
+	font-size: 18px;
+	font-weight: bold;
+}
+.title-comod{
+	font-size: 25px;
+	margin-left: 15px;
+	font-weight: bold;
+	color: #f7943e;
+}
+.thead-bouzour{
+	background-color: #f7943e!important;
+}
+.contact-me{
+	width: 100%;
+	min-height: 150px;
+	background-color: #f7943e;
+	color: #fff;
 }

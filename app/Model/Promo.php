@@ -32,4 +32,9 @@ class Promo extends Model
     {
         return $this->belongsToMany('App\Model\Bien');
     }
+
+    public function wilaya()
+    {
+        return $this->belongsTo('App\Model\Wilaya');
+    }
 }

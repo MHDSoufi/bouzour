@@ -172,6 +172,25 @@
 </style>
 @stop
 @section('js')
+ @if(Session::has('message'))
+  <script>
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 3000
+    });
+  </script>
+  <script type="text/javascript">
+   
+    //sweet alert function 
+   Toast.fire({
+        type: 'success',
+        title: '{{Session::get("message")}}'
+      });
+
+  </script>
+ @endif
 <script type="text/javascript">
 $.ajaxSetup({
     headers: {
@@ -283,7 +302,7 @@ var i = 0;
         addRemoveLinks: true,
         dictRemoveFile:"Supprimer l'image",
         forceFallback: false,
-        maxFilesize: 256, // Set the maximum file size to 256 MB
+        maxFilesize: 300, // Set the maximum file size to 256 MB
         parallelUploads: 100,
     });//end drop zone
     uploader.on("success", function(file,response) {

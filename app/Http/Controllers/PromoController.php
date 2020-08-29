@@ -41,7 +41,7 @@ class PromoController extends Controller
     public function store(Request $request)
     {
         $id = Promo::create([ 
-                'nom_promo' => $request->name,
+                'nom_promo' => $request->name, 
                 'nom_promo_AR' => $request->name,
                 'description' => $request->description,
                 'descriptionAR' => $request->description,
@@ -62,7 +62,13 @@ class PromoController extends Controller
             'promo_id' => $id,
         ]);
     } 
-    echo $id; 
+    $cover = getLienImage($id);
+    Promo::where('id', $id)->update([
+            'coverImage' => $cover,
+    ]);
+    Session::flash('message', 'Votre Promotion est creer');
+    Session::flash('alert-class', 'alert-success');
+        return redirect(route('promo.create'));
     }
 
     /**

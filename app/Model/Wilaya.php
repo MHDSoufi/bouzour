@@ -6,8 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Wilaya extends Model
 {
-    public function comune()
+    public function promo()
     {
-        return $this->hasMany('App\Model\Comune');
+        return $this->hasMany('App\Model\Promo');
     }
 }

@@ -43,7 +43,7 @@
     <div class="carousel-item">
       <img class="d-block w-100" src="{{url('images/slider/promo3.jpg')}} " >
       <div class="carousel-caption d-none d-md-block">
-      <a class="btn btn-warning" href="/edit" role="button">Promotion Immobiliere Oran - Canastel</a>
+      <a class="btn btn-warning" href="{{ route('edit', '4')}}" role="button">Promotion Immobiliere Oran - Canastel</a>
   	  </div>
     </div>
     <div class="carousel-item">

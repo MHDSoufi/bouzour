@@ -17,6 +17,8 @@ Route::get('/', 'ClientController@index')->name('Acceuil');
 Route::get('/propos', 'ClientController@propos')->name('Propos');
 Route::get('/promo/{vue}', 'ClientController@promoCours')->name('promoCour');
 Route::get('/edit/{id}', 'ClientController@edit')->name('edit');
+Route::get('/faq', 'ClientController@faq')->name('faq');
+Route::get('/contact', 'ClientController@contact')->name('contact');
 
 Route::get('/admin', function () {
     return view('admin');
