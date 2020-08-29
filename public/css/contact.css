@@ -39,3 +39,17 @@
 .coordone a:link{
 	text-decoration: none;
 }
+
+@media only screen and (max-device-width: 736px) {
+.titreContact{
+  top: 17%;
+  left: 1%;
+}
+.img-contact{
+	width: 700px;
+	height: 500px
+
+}
+#mapOran, #mapMosta, #mapChlef, #mapTel{margin-top: 520px;margin-left: -270px;}
+.coordone{margin-left: -270px;}
+}

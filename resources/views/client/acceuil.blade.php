@@ -37,7 +37,7 @@
     <div class="carousel-item">
       <img class="d-block w-100" src="{{url('images/slider/promo2.png')}} " >
       <div class="carousel-caption d-none d-md-block">
-      <a class="btn btn-warning" href="/edit" role="button">PROJET 160 LOGTS LPA BOUDJLIDA TLEMCEN</a>
+      <a class="btn btn-warning" href="{{ route('edit', '9')}}" role="button">PROJET 160 LOGTS LPA BOUDJLIDA TLEMCEN</a>
   	  </div>
     </div>
     <div class="carousel-item">
@@ -49,25 +49,25 @@
     <div class="carousel-item">
       <img class="d-block w-100" src="{{url('images/slider/promo4.jpg')}} " >
       <div class="carousel-caption d-none d-md-block">
-      <a class="btn btn-warning" href="/edit" role="button">RESIDENCE  ELYASMINE BELGAID ORAN</a>
+      <a class="btn btn-warning" href="{{ route('edit', '5')}}" role="button">RESIDENCE  ELYASMINE BELGAID ORAN</a>
   	  </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="{{url('images/slider/promo5.jpg')}} " >
       <div class="carousel-caption d-none d-md-block">
-      <a class="btn btn-warning" href="/edit" role="button">RESIDENCE  ZOHOUR PEPINIERE ORAN</a>
+      <a class="btn btn-warning" href="{{ route('edit', '6')}}" role="button">RESIDENCE  ZOHOUR PEPINIERE ORAN</a>
   	  </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="{{url('images/slider/promo6.jpg')}} " >
       <div class="carousel-caption d-none d-md-block">
-      <a class="btn btn-warning" href="/edit" role="button">RESIDENCE ELSALEM BIR EL DJIR ORAN</a>
+      <a class="btn btn-warning" href="{{ route('edit', '7')}}" role="button">RESIDENCE ELSALEM BIR EL DJIR ORAN</a>
   	  </div>
     </div>
     <div class="carousel-item">
       <img class="d-block w-100" src="{{url('images/slider/promo7.jpg')}} " >
       <div class="carousel-caption d-none d-md-block">
-      <a class="btn btn-warning" href="/edit" role="button">RESIDENCE ENASSIM BELGAID ORAN</a>
+      <a class="btn btn-warning" href="{{ route('edit', '8')}}" role="button">RESIDENCE ENASSIM BELGAID ORAN</a>
   	  </div>
     </div>
   </div>
@@ -94,7 +94,7 @@
       <div class="card-body">
         <h5>Residence HEY BENSOUNA</h5>
         <p class="card-text">Si vous souhaitez acquérir un appartement à Chlef dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
-        <a href="" class="link_cours">Voir Détail</a>
+        <a href="{{ route('edit', '1')}}" class="link_cours">Voir Détail</a>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
@@ -102,7 +102,7 @@
       <div class="card-body">
         <h5>PROJET 160 LOGTS LPA BOUDJLIDA TLEMCEN</h5>
         <p class="card-text">Si vous souhaitez acquérir un appartement à Tlemcen dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
-        <a href="" class="link_cours">Voir Détail</a>
+        <a href="{{ route('edit', '9')}}" class="link_cours">Voir Détail</a>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
@@ -110,7 +110,7 @@
       <div class="card-body">
         <h5>Promotion Immobiliere Oran - Canastel</h5>
         <p class="card-text">Si vous souhaitez acquérir un appartement à Oran dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
-        <a href="" class="link_cours">Voir Détail</a>
+        <a href="{{ route('edit', '4')}}" class="link_cours">Voir Détail</a>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
@@ -118,7 +118,7 @@
       <div class="card-body">
         <h5>RESIDENCE  ELYASMINE BELGAID ORAN</h5>
         <p class="card-text">Si vous souhaitez acquérir un appartement à Oran dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
-        <a href="" class="link_cours">Voir Détail</a>
+        <a href="{{ route('edit', '5')}}" class="link_cours">Voir Détail</a>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
@@ -126,18 +126,25 @@
       <div class="card-body">
         <h5>RESIDENCE  ZOHOUR PEPINIERE ORAN</h5>
         <p class="card-text">Si vous souhaitez acquérir un appartement à Oran dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
-        <a href="" class="link_cours">Voir Détail</a>
+        <a href="{{ route('edit', '6')}}" class="link_cours">Voir Détail</a>
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img class="card-img-top" src="{{url('images/slider/promo6.jpg')}}" alt="Card image cap">
+      <div class="card-body">
+        <h5>RESIDENCE ELSALEM BIR EL DJIR ORAN</h5>
+        <p class="card-text">Si vous souhaitez acquérir un appartement à Oran dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
+        <a href="{{ route('edit', '7')}}" class="link_cours">Voir Détail</a>
       </div>
     </div>
     <div class="card" style="width: 18rem;">
       <img class="card-img-top" src="{{url('images/slider/promo7.jpg')}}" alt="Card image cap">
       <div class="card-body">
-        <h5>RESIDENCE ELSALEM BIR EL DJIR ORAN</h5>
+        <h5>RESIDENCE ENASSIM BELGAID ORAN</h5>
         <p class="card-text">Si vous souhaitez acquérir un appartement à Oran dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
-        <a href="" class="link_cours">Voir Détail</a>
+        <a href="{{ route('edit', '8')}}" class="link_cours">Voir Détail</a>
       </div>
     </div>
-
   </div>
   <button class="glider-next">
     <i class="fa fa-chevron-right"></i>
@@ -195,6 +202,12 @@
 
 
 @stop
+
+@section('footer')
+  @include('partials.footer')
+@stop
+
+
 @section('js')
 @parent
 <script type="text/javascript" src="{{ asset('js/glider.min.js') }}"></script>

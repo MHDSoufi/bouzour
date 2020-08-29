@@ -42,7 +42,7 @@
 <div class="parallax">
 	<h2 class="titrePage">{{$promo->nom_promo}}</h2>
 </div>
-<div class="container-fluid">	
+<div class="container-fluid" id="container-mob">	
 	<div class="row" style="max-width: 1364px;padding: 20px;">	
 		<div class="col-md-6">
       <div id="gallery-1" class="royalSlider rsDefault">
@@ -217,7 +217,9 @@
  
 </div>
 @stop
-
+@section('footer')
+  @include('partials.footer')
+@stop
 
 @section('js')
 @parent

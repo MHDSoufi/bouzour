@@ -62,3 +62,19 @@
 	background-color: #f7943e;
 	color: #fff;
 }
+
+@media only screen and (max-device-width: 736px) {
+.titrePage{
+	top: 22%;
+	left: 2%;
+
+}
+#descript{
+	min-width: 300px;
+	margin-left: 160px;
+}
+#gallery-1{
+	margin-left: 160px;
+}
+
+}

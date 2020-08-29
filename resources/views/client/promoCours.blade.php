@@ -119,7 +119,7 @@
                   <div class="card-body">
                     <h5>Residence HEY BENSOUNA</h5>
                     <p class="card-text">Si vous souhaitez acquérir un appartement à Chlef dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
-                    <a href="" class="link_cours">Voir Détail</a>
+                    <a href="{{ route('edit', '1')}}" class="link_cours">Voir Détail</a>
                   </div>
               </div>
           <div class="card" style="width: 18rem;" id="promo_card_tel">
@@ -127,7 +127,7 @@
               <div class="card-body">
                 <h5>PROJET 160 LOGTS LPA BOUDJLIDA TLEMCEN</h5>
                 <p class="card-text">Si vous souhaitez acquérir un appartement à Tlemcen dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
-                <a href="" class="link_cours">Voir Détail</a>
+                <a href="{{ route('edit', '9')}}" class="link_cours">Voir Détail</a>
               </div>
           </div>
           <div class="card" style="width: 18rem;" id="promo_card_oran">
@@ -135,7 +135,7 @@
       <div class="card-body">
         <h5>Promotion Immobiliere Oran - Canastel</h5>
         <p class="card-text">Si vous souhaitez acquérir un appartement à Oran dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
-        <a href="" class="link_cours">Voir Détail</a>
+        <a href="{{ route('edit', '4')}}" class="link_cours">Voir Détail</a>
       </div>
     </div>
     <div class="card" style="width: 18rem;" id="promo_card_oran2">
@@ -143,7 +143,7 @@
       <div class="card-body">
         <h5>RESIDENCE  ELYASMINE BELGAID ORAN</h5>
         <p class="card-text">Si vous souhaitez acquérir un appartement à Oran dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
-        <a href="" class="link_cours">Voir Détail</a>
+        <a href="{{ route('edit', '5')}}" class="link_cours">Voir Détail</a>
       </div>
     </div>
     <div class="card" style="width: 18rem;" id="promo_card_oran3">
@@ -151,23 +151,23 @@
       <div class="card-body">
         <h5>RESIDENCE  ZOHOUR PEPINIERE ORAN</h5>
         <p class="card-text">Si vous souhaitez acquérir un appartement à Oran dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
-        <a href="" class="link_cours">Voir Détail</a>
+        <a href="{{ route('edit', '6')}}" class="link_cours">Voir Détail</a>
       </div>
     </div>
     <div class="card" style="width: 18rem;" id="promo_card_oran4">
-      <img class="card-img-top" src="{{url('images/slider/promo7.jpg')}}" alt="Card image cap">
+      <img class="card-img-top" src="{{url('images/slider/promo6.jpg')}}" alt="Card image cap">
       <div class="card-body">
         <h5>RESIDENCE ELSALEM BIR EL DJIR ORAN</h5>
         <p class="card-text">Si vous souhaitez acquérir un appartement à Oran dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
-        <a href="" class="link_cours">Voir Détail</a>
+        <a href="{{ route('edit', '7')}}" class="link_cours">Voir Détail</a>
       </div>
     </div>
     <div class="card" style="width: 18rem;" id="promo_card_oran5">
       <img class="card-img-top" src="{{url('images/slider/promo7.jpg')}}" alt="Card image cap">
       <div class="card-body">
-        <h5>RESIDENCE ELSALEM BIR EL DJIR ORAN</h5>
+        <h5>RESIDENCE ENASSIM ORAN</h5>
         <p class="card-text">Si vous souhaitez acquérir un appartement à Oran dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
-        <a href="" class="link_cours">Voir Détail</a>
+        <a href="{{ route('edit', '8')}}" class="link_cours">Voir Détail</a>
       </div>
     </div>
       </div>
@@ -180,7 +180,7 @@
           </div>
           <div class="col-md-6" id="listepromo">
             <div id="promo_chlef">
-                <a class="cardPromo" href="promoDatail"><div class="card" style="margin-bottom: 10px;">
+                <a class="cardPromo" href="{{ route('edit', '1')}}"><div class="card" style="margin-bottom: 10px;">
                 <h5 class="card-header">Residence HEY BENSOUNA</h5>
                 <div class="card-body">
                     <div class="image">
@@ -196,7 +196,7 @@
                 </a>
             </div>
             <div id="promo_tel">
-                <a class="cardPromo" href="promoDatail"><div class="card" style="margin-bottom: 10px;">
+                <a class="cardPromo" href="{{ route('edit', '9')}}"><div class="card" style="margin-bottom: 10px;">
                     <h5 class="card-header">PROJET 160 LOGTS LPA BOUDJLIDA TLEMCEN</h5>
                     <div class="card-body">
                       <div class="image">
@@ -212,11 +212,11 @@
                 </a>
             </div>
             <div id="promo_oran">
-                <a class="cardPromo" href="promoDatail"><div class="card" style="margin-bottom: 10px;">
+                <a class="cardPromo" href="{{ route('edit', '4')}}"><div class="card" style="margin-bottom: 10px;">
                   <h5 class="card-header">Promotion Immobiliere Oran - Canastel</h5>
                   <div class="card-body">
                     <div class="image">
-                      <img class="card-img" src="{{url('images/slider/promo2.png')}}" alt="Card image cap">
+                      <img class="card-img" src="{{url('images/slider/promo3.jpg')}}" alt="Card image cap">
                     </div>
                     <div class="text">
                       <h5 class="card-title">Oran</h5>
@@ -226,11 +226,11 @@
                   </div>
                 </div>
                 </a>
-                <a class="cardPromo" href="promoDatail"><div class="card" style="margin-bottom: 10px;">
+                <a class="cardPromo" href="{{ route('edit', '5')}}"><div class="card" style="margin-bottom: 10px;">
                   <h5 class="card-header">RESIDENCE  ELYASMINE BELGAID ORAN</h5>
                   <div class="card-body">
                     <div class="image">
-                      <img class="card-img" src="{{url('images/slider/promo2.png')}}" alt="Card image cap">
+                      <img class="card-img" src="{{url('images/slider/promo4.jpg')}}" alt="Card image cap">
                     </div>
                     <div class="text">
                       <h5 class="card-title">Oran</h5>
@@ -240,11 +240,11 @@
                   </div> 
                 </div>
                 </a>
-                <a class="cardPromo" href="promoDatail"><div class="card" style="margin-bottom: 10px;">
+                <a class="cardPromo" href="{{ route('edit', '6')}}"><div class="card" style="margin-bottom: 10px;">
                     <h5 class="card-header">RESIDENCE  ZOHOUR PEPINIERE ORAN</h5>
                     <div class="card-body">
                       <div class="image">
-                        <img class="card-img" src="{{url('images/slider/promo2.png')}}" alt="Card image cap">
+                        <img class="card-img" src="{{url('images/slider/promo5.jpg')}}" alt="Card image cap">
                       </div>
                       <div class="text">
                         <h5 class="card-title">Oran</h5>
@@ -254,11 +254,25 @@
                     </div>
                   </div>
                 </a>
-                <a class="cardPromo" href="promoDatail"><div class="card" style="margin-bottom: 10px;">
+                <a class="cardPromo" href="{{ route('edit', '7')}}"><div class="card" style="margin-bottom: 10px;">
                     <h5 class="card-header">RESIDENCE ELSALEM BIR EL DJIR ORAN</h5>
                     <div class="card-body">
                       <div class="image">
-                        <img class="card-img" src="{{url('images/slider/promo2.png')}}" alt="Card image cap">
+                        <img class="card-img" src="{{url('images/slider/promo6.jpg')}}" alt="Card image cap">
+                      </div>
+                      <div class="text">
+                        <h5 class="card-title">Oran</h5>
+                        <p class="card-text">Si vous souhaitez acquérir un appartement à Oran dans un quartier stratégique au sein de l’un des quartiers résidentiels les plus prestigieux de la ville...</p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </a>
+                <a class="cardPromo" href="{{ route('edit', '8')}}"><div class="card" style="margin-bottom: 10px;">
+                    <h5 class="card-header">RESIDENCE ENASSIM BIR EL DJIR ORAN</h5>
+                    <div class="card-body">
+                      <div class="image">
+                        <img class="card-img" src="{{url('images/slider/promo7.jpg')}}" alt="Card image cap">
                       </div>
                       <div class="text">
                         <h5 class="card-title">Oran</h5>
@@ -291,12 +305,12 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'your.mapbox.access.token'
 }).addTo(mymap);
 var promos = [
-  {'lng' : '34.923969' ,'lat': '-1.343349', 'PopUp' : "<a class=\"link-pop\" href=\"\"><b>PROJET 160 LOGTS LPA BOUDJLIDA</b><br><img class=\"img-pop\"  src=\"{{url('images/slider/promo1.jpg')}}\" ></a>"},
-  {'lng' : '36.153676','lat' : '1.324959', 'PopUp' : "<a class=\"link-pop\" href=\"\"><b>Residence Bensouna</b><br><img class=\"img-pop\"  src=\"{{url('images/slider/promo2.png')}}\" ></a>"},
-  {'lng' : '35.744129','lat' : '-0.536634', 'PopUp' : "<a class=\"link-pop\" href=\"\"><b>RESIDENCE  ELYASMINE BELGAID</b><br><img class=\"img-pop\"  src=\"{{url('images/slider/promo3.jpg')}}\" ></a>"},
-  {'lng' : '35.713242', 'lat' : '-0.568674', 'PopUp' : "<a class=\"link-pop\" href=\"\"><b>PROJET RESIDENCE  ZOHOUR PEPINIERE</b><br><img class=\"img-pop\"  src=\"{{url('images/slider/promo4.jpg')}}\" ></a><br/><a class=\"link-pop\" href=\"\"><b>RESIDENCE ELSALEM BIR EL DJIR</b><br><img class=\"img-pop\"  src=\"{{url('images/slider/promo5.jpg')}}\" ></a>"},
-  {'lng' : '35.740123','lat': '-0.548821', 'PopUp' : "<a class=\"link-pop\" href=\"\"><b>RESIDENCE ENASSIM BELGAID</b><br><img class=\"img-pop\"  src=\"{{url('images/slider/promo6.jpg')}}\" ></a>"},
-  {'lng' : '35.751188','lat': '-0.553240', 'PopUp' : "<a class=\"link-pop\" href=\"\"><b>RESIDENCE Canastel</b><br><img class=\"img-pop\"  src=\"{{url('images/slider/promo6.jpg')}}\" ></a>"},
+  {'lng' : '34.923969' ,'lat': '-1.343349', 'PopUp' : "<a class=\"link-pop\" href='{{ route('edit', '9')}}'><b>PROJET 160 LOGTS LPA BOUDJLIDA</b><br><img class=\"img-pop\"  src=\"{{url('images/slider/promo1.jpg')}}\" ></a>"},
+  {'lng' : '36.153676','lat' : '1.324959', 'PopUp' : "<a class=\"link-pop\" href='{{ route('edit', '1')}}'><b>Residence Bensouna</b><br><img class=\"img-pop\"  src=\"{{url('images/slider/promo2.png')}}\" ></a>"},
+  {'lng' : '35.744129','lat' : '-0.536634', 'PopUp' : "<a class=\"link-pop\" href='{{ route('edit', '5')}}'><b>RESIDENCE  ELYASMINE BELGAID</b><br><img class=\"img-pop\"  src=\"{{url('images/slider/promo3.jpg')}}\" ></a>"},
+  {'lng' : '35.713242', 'lat' : '-0.568674', 'PopUp' : "<a class=\"link-pop\" href='{{ route('edit', '6')}}'><b>PROJET RESIDENCE  ZOHOUR PEPINIERE</b><br><img class=\"img-pop\"  src=\"{{url('images/slider/promo4.jpg')}}\" ></a><br/><a class=\"link-pop\" href='{{ route('edit', '7')}}'><b>RESIDENCE ELSALEM BIR EL DJIR</b><br><img class=\"img-pop\"  src=\"{{url('images/slider/promo5.jpg')}}\" ></a>"},
+  {'lng' : '35.740123','lat': '-0.548821', 'PopUp' : "<a class=\"link-pop\" href='{{ route('edit', '8')}}'><b>RESIDENCE ENASSIM BELGAID</b><br><img class=\"img-pop\"  src=\"{{url('images/slider/promo6.jpg')}}\" ></a>"},
+  {'lng' : '35.751188','lat': '-0.553240', 'PopUp' : "<a class=\"link-pop\" href='{{ route('edit', '4')}}'><b>RESIDENCE Canastel</b><br><img class=\"img-pop\"  src=\"{{url('images/slider/promo6.jpg')}}\" ></a>"},
 ];
 var layerTable = [];
 var oran = document.getElementById("promo_oran"),
